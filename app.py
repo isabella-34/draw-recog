@@ -52,6 +52,7 @@ with st.sidebar:
 
 st.write("Crea el boceto en el panel  y presiona el botón para analizarla y obtener títulos de canciones sobre tu dibujo.")
 
+canvas_key = f"canvas_{canvas_width}_{canvas_height}_{stroke_width}_{stroke_color}_{bg_color}_{drawing_mode}"
 # Create a canvas component
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
@@ -62,7 +63,7 @@ canvas_result = st_canvas(
     width=canvas_width,
     #background_image= None #Image.open(bg_image) if bg_image else None,
     drawing_mode=drawing_mode,
-    key="canvas",
+    key = canvas_key,
 )
 
 ke = st.text_input('Ingresa tu Clave')
