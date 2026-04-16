@@ -26,36 +26,6 @@ def encode_image_to_base64(image_path):
 
 # Streamlit 
 st.set_page_config(page_title='Tablero Inteligente')
-def set_background():
-    st.markdown(
-        """
-        <style>
-        .stApp {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            background-attachment: fixed;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-set_background()
-
-def set_sidebar_style():
-    st.markdown(
-        """
-        <style>
-        section[data-testid="stSidebar"] {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-set_sidebar_style()
-
 st.title('Tablero Inteligente')
 with st.sidebar:
     st.subheader("Acerca de:")
