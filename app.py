@@ -83,7 +83,7 @@ if canvas_result.image_data is not None and api_key and analyze_button:
  
         base64_image = encode_image_to_base64("img.png")
             
-        prompt_text = (f""""
+        prompt_text = (f"""
             Analiza el dibujo y describe brevemente qué representa.
             
             Luego recomienda 5 canciones reales que conecten con:
@@ -99,7 +99,7 @@ if canvas_result.image_data is not None and api_key and analyze_button:
             1. Canción - Artista
             2. Canción - Artista
             ...
-            """")
+            """)
     
       # Create the payload for the completion request
         messages = [
