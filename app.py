@@ -83,7 +83,23 @@ if canvas_result.image_data is not None and api_key and analyze_button:
  
         base64_image = encode_image_to_base64("img.png")
             
-        prompt_text = (f"Describe in spanish briefly the image")
+        prompt_text = (f""""
+            Analiza el dibujo y describe brevemente qué representa.
+            
+            Luego recomienda 5 canciones reales que conecten con:
+            - la emoción
+            - el ambiente
+            - o la historia sugerida por el dibujo
+            
+            Incluye nombre de la canción y artista.
+            
+            Formato:
+            Descripción: ...
+            Canciones:
+            1. Canción - Artista
+            2. Canción - Artista
+            ...
+            """")
     
       # Create the payload for the completion request
         messages = [
