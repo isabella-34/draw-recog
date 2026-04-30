@@ -26,10 +26,10 @@ def encode_image_to_base64(image_path):
 
 # Streamlit 
 st.set_page_config(page_title='Tablerito Inteligente')
-st.title('Tablerito Inteligente ✩ ♬ ₊.🎧⋆☾⋆⁺₊✧')
+st.title('Tablerito Inteligente ׅ 𝄂𝄚𝅦𝄚𝄞𝅄ㅤ')
 with st.sidebar:
     
-    st.subheader("En esta aplicación podrás obtener recomendaciones de canciones según a lo que dibujes!!")
+    st.subheader("En esta aplicación podrás obtener recomendaciones de canciones según lo que dibujes!! ✩ ♬ ₊.🎧⋆☾⋆⁺₊✧")
     st. subheader("Propiedades del Tablero")
     # Canvas dimensions (moved to the top)
     canvas_width = st.slider("Ancho del tablero", 300, 700, 500, 50)
