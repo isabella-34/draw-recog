@@ -26,7 +26,7 @@ def encode_image_to_base64(image_path):
 
 # Streamlit 
 st.set_page_config(page_title='Tablerito Inteligente')
-st.title('Tablerito Inteligente')
+st.title('Tablerito Inteligente ✩ ♬ ₊.🎧⋆☾⋆⁺₊✧')
 with st.sidebar:
     
     st.subheader("En esta aplicación podrás obtener recomendaciones de canciones según a lo que dibujes!!")
